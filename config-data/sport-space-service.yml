@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://${EUREKA_HOST:registry-service}/eureka/
+      defaultZone: ${EUREKA_HOST:http://registry-service:8099/eureka}
 
 resilience4j.circuitbreaker:
   instances:
