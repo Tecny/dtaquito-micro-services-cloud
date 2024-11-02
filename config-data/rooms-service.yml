@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  ${EUREKA_SERVER:https://dtaquito-registry-service.azurewebsites.net/eureka}
+      defaultZone: ${EUREKA_SERVER:https://dtaquito-registry-service.azurewebsites.net/eureka}
 
 resilience4j.circuitbreaker:
   instances:
