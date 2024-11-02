@@ -1,10 +1,13 @@
 server:
   port: 8099
 
+
 eureka:
+  instance:
+    hostname: https://dtaquito-registry-service.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
 #       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-       defaultZone: ${EUREKA_SERVER:http://registry-service:8099/eureka}
+       defaultZone: ${eureka.instance.hostname:http://registry-service:8099/eureka}
