@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER:http://registry-service:8099/eureka}
+      defaultZone:  ${EUREKA_SERVER:https://dtaquito-registry-service.azurewebsites.net/eureka}
 
 spring:
   cloud:
